@@ -21,6 +21,6 @@ npm init @eslint/config@latest
 
 # prettier - style formatter (see: https://prettier.io/docs/install.html)
 npm install --save-dev --save-exact prettier
-&& node --eval "fs.writeFileSync('.prettierrc','{}\n')"
-&& node --eval "fs.writeFileSync('.prettierignore','# Ignore artifacts:\nbuild\ncoverage\n')"
+node --eval "fs.writeFileSync('.prettierrc','{}\n')"
+node --eval "fs.writeFileSync('.prettierignore','# Ignore artifacts:\nbuild\ncoverage\n')"
 ```
